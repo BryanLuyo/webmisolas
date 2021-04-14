@@ -8,8 +8,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
-    
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">    
     <meta name="theme-color" content="#33333c">
     <title>Mis Olas</title>
 </head>
@@ -19,29 +18,32 @@
 
         </header>
         <section class="banner d-flex  align-items-center">
-            <a href="" class="banner__flecha"><img src="static/img/iconos/flecha.png" alt=""></a>
+            <a href="javascript:void(0)" id="mouse-scroll" class="banner__flecha"><img src="static/img/iconos/flecha.png" alt=""></a>
             <video class="vid" autoplay="" loop="" muted="" poster="img/background/lugarIdeal2.jpg">
-                <source src="static/img/bg/slider2.mp4" type="video/mp4">
+                <source src="static/img/bg/slider1.mp4" type="video/mp4">
             </video>
            <div class="container-fluid">
                <div class="row">
-                    <div class="col-xl-5 offset-xl-1">                        
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-6">                        
                         <div class="banner__contenido">
                             <img src="static/img/logo.png" class="logo" alt="">
                             <div class="texto">
                                 <h3>La nueva forma de ver el mar!</h3>
                                 <h1>Cámaras 4K en VIVO</h1>
                                 <p>en las mejores playas de Perú</p>
-                                <div class="logosApp">
+                                <div class="iniciar d-none d-sm-block">
+                                    <a href="">Ingresar</a>
+                                </div>
+                                <div class="logosApp d-block d-sm-none">
                                     <a href="https://play.google.com/store/apps/details?id=com.surfcams.surfnow" target="_blank"><img src="static/img/iconos/googlePlay.png" alt=""></a>
                                     <a href="https://apps.apple.com/us/app/mis-olas/id1539844091" target="_blank"><img src="static/img/iconos/appStore.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 offset-xl-1 d-flex justify-content-end align-items-center">
+                    <div class="col-xl-3 offset-xl-1 col-lg-6  col-md-6 d-flex align-items-center">
                         <div class="banner__celular">
-                            <img src="static/img/celular/escoge.png"  alt="">
+                            <img src="static/img/celular/playas.png"  alt="">
                         </div>
                     </div>                  
                </div>
@@ -55,7 +57,27 @@
                         <h2 class="titulo titulo--grande" data-aos="fade-down"  data-aos-duration="1000">20 playas en vivo</h2>
                     </div>
                     <div class="col-lg-12">
-                        <div class="owl-carousel owl-playa owl-theme"   data-aos="fade-up" data-aos-duration="1000">
+                        <div class="owl-carousel owl-playa owl-theme"  data-aos="fade-up" data-aos-duration="1000">
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/laIsla.JPG);">
+                                    <h3>La Isla</h3>
+                                </a>
+                            </div>  
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/lobitos.jpg);">
+                                    <h3>Lobitos</h3>
+                                </a>
+                            </div>    
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/mancora.JPG);">
+                                    <h3>Mancora</h3>
+                                </a>
+                            </div> 
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/pacasmayo.jpg);">
+                                    <h3>Pacasmayo</h3>
+                                </a>
+                            </div>  
                             <div class="item">
                                 <a href="" class="playas__contenido" style="background-image: url(static/img/playas/caballeros.JPG);">
                                     <h3>Caballeros</h3>
@@ -80,7 +102,27 @@
                                 <a href="" class="playas__contenido" style="background-image: url(static/img/playas/LaHerradura.jpg);">
                                     <h3>La Herradura</h3>
                                 </a>
-                            </div>                           
+                            </div>  
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/elHuayco.JPG);">
+                                    <h3>El Huayco</h3>
+                                </a>
+                            </div>                               
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/puertoViejo.JPG);">
+                                    <h3>Puerto Viejo</h3>
+                                </a>
+                            </div> 
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/puntaRocas.JPG);">
+                                    <h3>Punta Rocas</h3>
+                                </a>
+                            </div> 
+                            <div class="item">
+                                <a href="" class="playas__contenido" style="background-image: url(static/img/playas/Señoritas.JPG);">
+                                    <h3>Señoritas</h3>
+                                </a>
+                            </div>                   
                         </div>
                     </div>
                 </div>
@@ -91,92 +133,126 @@
                 <div class="row">
                     <div class="col-xl-5 offset-xl-1 col-lg-6 ">
                         <div class="caracteristicas__content">
-                            <h2 class="titulo titulo--grande" data-aos="fade-down">Características</h2>
-                            <div class="puntos row">
-                                <div class="col-lg-6">
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>1</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Cámaras en vivo</h4>                                        
-                                        </div>
+                            <h2 class="titulo titulo--grande" data-aos="fade-down">Nuestras funciones</h2>
+                            <div class="puntos">
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funcion1.png" alt="">
                                     </div>
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>2</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Eventos en Streaming</h4>
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>3</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Recording</h4>                                        
-                                        </div>
-                                    </div>
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>4</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Pronostico</h4>                                        
-                                        </div>
+                                    <div class="item__texto">
+                                        <h4>Cámaras en vivo</h4>   
+                                        <p>En 4 segundos podrás ver en vivo la Playa que quieras</p>                                     
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>5</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Fastreview</h4>                                        
-                                        </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funcion2.png" alt="">
                                     </div>
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>6</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Multicam</h4>                                        
-                                        </div>
-                                    </div>
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>7</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>ReportBot</h4>                                        
-                                        </div>
-                                    </div>
-                                    <div class="item" data-aos="fade-right" data-aos-duration="1000">
-                                        <div class="item__numero">
-                                            <span>8</span>
-                                        </div>
-                                        <div class="item__texto">
-                                            <h4>Share</h4>                                        
-                                        </div>
+                                    <div class="item__texto">
+                                        <h4>Eventos en Streaming</h4>
+                                       <p>Trasmisiones en vivo de los mejores eventos</p>
                                     </div>
                                 </div>
-                                
-                            </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funcion3.png" alt="">
+                                    </div>
+                                    <div class="item__texto">
+                                        <h4>MULTI CAM</h4>  
+                                        <p>Compara rápidamente las condiciones de 2 o más lugares
+                                            en simultáneo.</p>                                      
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funcion4.png" alt="">
+                                    </div>
+                                    <div class="item__texto">
+                                        <h4>FAST REVIEW</h4>   
+                                        <p>Revisa de forma acelerada todos los acontecimientos de los últimos 10 minutos.</p>                                     
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funciona5.png" alt="">
+                                    </div>
+                                    <div class="item__texto">
+                                        <h4>REPORTBOT</h4>                                        
+                                        <p>Tu mensajero personal con datos en tiempo real.</p>
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funciona6.png" alt="">
+                                    </div>
+                                    <div class="item__texto">
+                                        <h4>PRONÓSTICO</h4>
+                                        <p>Previsión del mar con 10 días de anticipación.</p>                                        
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funciona7.png" alt="">
+                                    </div>
+                                    <div class="item__texto">
+                                        <h4>PLAY BACKS</h4>        
+                                        <p>Genera tus clips con las olas de tu última sesión.</p>                                
+                                    </div>
+                                </div>
+                                <div class="item" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="item__numero">
+                                        <img src="static/img/iconos/funciona8.png" alt="">
+                                    </div>
+                                    <div class="item__texto">
+                                        <h4>Share</h4> 
+                                        <p>Comparte en redes sociales tus clips</p>                                      
+                                    </div>
+                                </div>
+                            </div>                                                       
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 d-flex align-items-center">
                         <img data-aos="fade-left"  data-aos-duration="2000" src="static/img/celular/login1.png" class="img-fluid caracteristicas__foto" alt="">
                     </div>
                 </div>
             </div>
         </section>        
         <section class="funciona">
-            <div class="container">
-                <div class="row">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
                     <div class="col-lg-12 text-center">
-                        <h2 class="titulo titulo--grande">¿Cómo funciona?</h2>
+                        <h2 class="titulo titulo--grande" data-aos="fade-down"  data-aos-duration="1000">¿Cómo funciona?</h2>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1 col-6 col-md-4">
+                        <img src="static/img/celular/login.png" data-aos="fade-right" data-aos-duration="1000" class="funciona__img" alt="">
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 col-6 col-md-3 d-flex align-items-center">
+                        <div class="funciona__content"  data-aos="fade-left" data-aos-duration="1000">
+                            <h3>1</h3>
+                            <h2 class="titulo">Iniciar <br> Sesión</h2>                            
+                        </div>
+                    </div>                                                        
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-3 offset-lg-1 col-md-4  d-flex align-items-center col-6">
+                        <div class="funciona__content"  data-aos="fade-right" data-aos-duration="1000">
+                            <h3>2</h3>
+                            <h2 class="titulo">Escoge <br> una playa</h2>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 col-md-4 col-6" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="static/img/celular/playas.png" class="funciona__img"  alt="">
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-3 offset-lg-1 col-6 col-md-4">
+                        <img src="static/img/celular/envivo.png" class="funciona__img"  alt="" data-aos="fade-right" data-aos-duration="1000">
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 col-6 col-md-3  d-flex align-items-center">
+                        <div class="funciona__content" data-aos="fade-left" data-aos-duration="1000">
+                            <h3>3</h3>
+                            <h2 class="titulo">Disfruta <br> en vivo</h2>                            
+                        </div>
                     </div>
                 </div>
             </div>
@@ -186,10 +262,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="titulo titulo--grande">Consejos de PRO</h2>
+                        <h2 class="titulo titulo--grande" data-aos="fade-down"  data-aos-duration="1000">Consejos de PRO</h2>
                     </div>
                     <div class="col-lg-12">
-                        <div class="owl-carousel owl-video owl-theme">
+                        <div class="owl-carousel owl-video owl-theme" data-aos="fade-up"  data-aos-duration="1000">
                             <div class="item">
                                 <a href="https://www.youtube.com/embed/VFD7d73a8F0" data-fancybox="gallery"  class="video__contenido" style="background-image: url(static/img/video/1.png);">
                                     <img src="static/img/iconos/video.png" class="play" alt="">                                    
@@ -201,12 +277,12 @@
                                 </a>
                             </div>
                             <div class="item">
-                                <a href="https://www.youtube.com/embed/WKQajKpBnMA" data-fancybox="gallery" class="video__contenido" style="background-image: url(static/img/video/1.png);">
+                                <a href="https://www.youtube.com/embed/6OkzfBDNgSQ" data-fancybox="gallery" class="video__contenido" style="background-image: url(static/img/video/3.png);">
                                     <img src="static/img/iconos/video.png" class="play" alt="">
                                 </a>
                             </div>
                             <div class="item">
-                                <a href="https://www.youtube.com/embed/WKQajKpBnMA" data-fancybox="gallery" class="video__contenido" style="background-image: url(static/img/video/2.png);">
+                                <a href="https://www.youtube.com/embed/77nsXcAeuAc" data-fancybox="gallery" class="video__contenido" style="background-image: url(static/img/video/4.png);">
                                     <img src="static/img/iconos/video.png" class="play" alt="">
                                 </a>
                             </div>                            
@@ -228,6 +304,7 @@
                                 <a href=""><img src="static/img/iconos/googlePlay.png" alt=""></a>
                                 <a href=""><img src="static/img/iconos/appStore.png" alt=""></a>
                             </div>
+                            <a href="" class="terminos"  data-toggle="modal" data-target="#exampleModal"> Terminos y condiciones / Políticas de Privacidad</a>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -249,8 +326,21 @@
         </footer>
     </main>
   
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">                
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2>Terminos y condiciones</h2>
+                </div>        
+            </div>
+        </div>
+    </div>
    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>    
     <script src="static/js/bootstrap.min.js"></script>    
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

@@ -475,6 +475,38 @@ body {
   margin: auto;
 }
 
+.modal-body {
+  position: relative;
+  padding: 46px 60px;
+}
+
+.modal-body .close {
+  position: absolute;
+  background-color: #1484c2;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  right: -23px;
+  top: -23px;
+  opacity: 1;
+}
+
+.modal-body .close span {
+  color: #fff;
+  font-size: 30px;
+}
+
+.modal-body h3 {
+  color: #1484c2;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.modal-body p {
+  font-size: 15px;
+  color: #33333c;
+}
+
 .footer {
   background-color: #00a7e2;
   padding: 30px 0px 0px;
@@ -697,14 +729,6 @@ body {
 @media (min-width: 1600px) {
   .modal-dialog {
     max-width: 1000px;
-  }
-  .modal-body {
-    position: relative;
-    padding: 60px 57px;
-  }
-  .modal-body p {
-    font-size: 15px;
-    color: #33333c;
   }
   .funciona {
     padding: 100px 0px;

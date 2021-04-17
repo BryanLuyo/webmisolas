@@ -46,9 +46,9 @@ body{
 .titulo{
     &--grande{
         color: $celeste;
-        font-weight: 600;  
-        font-size: 30px;
-        line-height: 34px;              
+        font-weight: 600;          
+        font-size: 27px;
+        line-height: 27px;             
     }
 }
 
@@ -58,8 +58,8 @@ body{
     background-size: cover;
     position: relative;
     height: auto;
-    padding: 30px 0px;
-    &__flecha{
+    padding: 30px 0px 85px;
+    &__flecha{ 
         position: absolute;
         bottom: 30px;
         left: 0;
@@ -121,19 +121,18 @@ body{
                 line-height: 13px;
             }
             h1{
-                font-weight: 600;               
-                font-size: 30px;
-                line-height: 37px;
-            
+                font-weight: 600;                               
+                font-size: 26px;
+                line-height: 33px;
             }
             p{                
-                font-size: 20px;
-                line-height: 16px;
+                font-size: 17px;
+                line-height: 14px;                
             }
             .logosApp{                
                 margin-top: 37px;
-                img{
-                    width: 156px;
+                img{                    
+                    width: 140px;
                 }
             }
         }
@@ -222,8 +221,8 @@ body{
     .titulo{
         margin-bottom: 50px;
     }
-    &__img{        
-        width: 160px;
+    &__img{                
+        width: 133px;
     }
     &__content{
         position: relative;
@@ -236,9 +235,9 @@ body{
             opacity: 0.3;            
             top:-12px;
         }
-        h2{            
-            font-size: 19px;
-            line-height: 27px;
+        h2{                                    
+            font-size: 15px;
+            line-height: 26px;
             color: $celeste;
             font-weight: bold;
         }
@@ -370,8 +369,8 @@ body{
             }
         }
     }
-    &__contenido{       
-       height: 223px;
+    &__contenido{              
+       height: 178px;
        position: relative;
        background-size: cover;
        display: block;
@@ -410,28 +409,38 @@ body{
 .modal{
     &-body{
         position: relative;
-        padding: 46px 60px;
+        padding: 24px 20px;
         .close{
             position: absolute;
             background-color: $azul;
-            width: 60px;
-            height: 60px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
-            right: -23px;
-            top: -23px;
+            right: -9px;
+            top: -6px;
             opacity: 1;
             span{
                 color: $blanco;
-                font-size: 30px;
+                font-size: 20px;
             }
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                font-size: 12px;
+            }
+        }
+        h2{
+            font-size: 20px;
         }
         h3{
             color: $azul;
-            font-size: 22px;
+            font-size: 16px;
             font-weight: 600;
         }
         p{
-            font-size: 15px;
+            font-size: 12px;
             color: $negro;
         }
     }
@@ -487,8 +496,8 @@ body{
     &__contenido{
         .logosApp{
             a{
-                img{
-                    width: 160px;
+                img{                    
+                    width: 140px;
                 }
             }
         }
@@ -507,7 +516,65 @@ body{
     } 
 }
 
+@media(min-width:375px){
+    .video{
+        &_contenido{
+            height: 223px;
+        }
+    }
+    .footer{
+        &__contenido{
+            .logosApp{
+                a{
+                    img{
+                        width: 160px;
+                    }
+                }
+            }
+        }
+    }
+    .funciona{
+        &__content{
+            h2{
+                font-size: 19px;
+                line-height: 27px;
+            }
+        }
+        &__img{
+            width: 160px;
+        }
+    }
+    .titulo{
+        &--grande{
+            font-size: 30px;
+            line-height: 34px; 
+        }
+    }
+    .banner{
+        &__contenido{
+            .texto{
+                .logosApp{
+                    img{
+                        width: 156px;
+                    }
+                }
+                h1{
+                    font-size: 30px;
+                    line-height: 37px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}
+
 @media(min-width:768px){
+    .banner{
+        padding: 30px 0px 40px;
+    }
     .funciona{
         &__img{
             width: 200px;
@@ -530,6 +597,38 @@ body{
     }
 }
 @media(min-width:992px){
+   
+    .modal{
+        &-body{            
+            padding: 46px 60px;
+            .close{           
+                width: 60px;
+                height: 60px;                
+                right: -23px;
+                top: -23px;                
+                span{                    
+                    font-size: 30px;
+                }
+            }
+            h2{
+                font-size: 34px;
+                line-height: 72px;
+            }
+            h3{                
+                font-size: 22px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 15px;                
+            } 
+            ul{
+                li{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
     .footer{
         &::before{           
             height: 60px;
@@ -585,7 +684,9 @@ body{
 }
 
 @media(min-width:1200px){
-
+    .modal-dialog {
+        max-width: 800px;
+    }
     .funciona{
         &__img{
             width: 260px;
@@ -688,6 +789,14 @@ body{
 @media(min-width:1600px){
     .modal-dialog {
         max-width: 1000px;        
+    }
+    
+    .modal{
+        &-body{
+            h2{
+                font-size: 38px;                
+            }
+        }
     }
     
     .funciona{

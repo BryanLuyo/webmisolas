@@ -37,7 +37,7 @@ body {
   background-color: #fff;
   color: #33333c;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 @font-face {
@@ -60,7 +60,7 @@ body {
   background-size: cover;
   position: relative;
   height: auto;
-  padding: 30px 0px 85px;
+  padding: 30px 0px 90px;
 }
 
 .banner__flecha {
@@ -374,7 +374,7 @@ body {
   left: 20px;
   margin: 0;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .playas__img {
@@ -415,6 +415,10 @@ body {
   font-weight: 300;
 }
 
+.eventos {
+  padding: 0px 0px 60px !important;
+}
+
 .video {
   padding: 60px 0px;
 }
@@ -438,6 +442,22 @@ body {
   display: block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.video__contenido span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.video__contenido h3 {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  margin: 0;
+  font-size: 18px;
 }
 
 .video__contenido:hover {
@@ -445,14 +465,11 @@ body {
           transform: scale(1.1);
   -webkit-box-shadow: 4px 4px 9px #0000004f;
           box-shadow: 4px 4px 9px #0000004f;
-}
-
-.video__contenido:hover .video__contenido:before {
-  background-color: red;
+  color: #fff;
 }
 
 .video__contenido:hover .play {
-  width: 90px !important;
+  width: 75px !important;
 }
 
 .video__contenido::before {
@@ -461,10 +478,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: #0088c738;
+  border-radius: 10px;
 }
 
 .video__contenido .play {
-  width: 76px !important;
+  width: 64px !important;
   position: absolute;
   top: 0;
   -webkit-transition: 0.4s;
@@ -765,6 +783,9 @@ body {
   .playas .owl-nav .owl-next {
     right: -20px;
   }
+  .video__contenido {
+    height: 232px;
+  }
   .footer {
     padding: 0;
   }
@@ -887,14 +908,26 @@ body {
   .playas__img__lupa h3 {
     font-size: 25px;
   }
+  .eventos {
+    padding: 10px 0px 160px !important;
+  }
   .video {
-    padding: 100px 0px 160px;
+    padding: 100px 0px;
   }
   .video .owl-item {
     padding: 40px 20px;
   }
   .video__contenido {
     height: 345px;
+  }
+  .video__contenido h3 {
+    font-size: 24px;
+  }
+  .video__contenido:hover .play {
+    width: 87px !important;
+  }
+  .video__contenido .play {
+    width: 76px !important;
   }
   .container {
     max-width: 1792px;

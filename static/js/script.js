@@ -1,8 +1,7 @@
 
 $('.owl-video').owlCarousel({
   loop:true,  
-  nav:false,    
-  autoplay:true,
+  nav:false,   
   responsive:{
       0:{
           items:1

@@ -508,9 +508,14 @@ body{
         margin-top: 28px;
         margin-bottom: 20px;
         a{
-            margin-right: 16px;           
+            margin-right: 16px;     
+            transition: all 0.9s;
+            display: inline-block;
+            &:hover{
+                transform: rotate(360deg);
+            }      
         }
-    }
+    } 
     &__contenido{
         .logosApp{
             a{
@@ -664,7 +669,7 @@ body{
         }
         &__celular{
             img{
-                width: 250px;
+                width: 222px;
                 padding: 0;
             }
         }

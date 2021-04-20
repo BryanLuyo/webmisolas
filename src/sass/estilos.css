@@ -593,6 +593,14 @@ body {
 
 .footer__redes a {
   margin-right: 16px;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  display: inline-block;
+}
+
+.footer__redes a:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .footer__contenido .logosApp a img {
@@ -706,7 +714,7 @@ body {
     display: block;
   }
   .banner__celular img {
-    width: 250px;
+    width: 222px;
     padding: 0;
   }
   .banner__contenido .texto h1 {

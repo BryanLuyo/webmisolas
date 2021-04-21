@@ -15,6 +15,23 @@ $('.owl-video').owlCarousel({
   }
 })
 
+
+$('.owl-evento').owlCarousel({
+  loop:true,  
+  nav:false,   
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      }, 
+      1000:{
+          items:2
+      }
+  }
+})
+
 $('.owl-playa').owlCarousel({
   loop:true,  
   nav:true,
